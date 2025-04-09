@@ -1,61 +1,79 @@
-/* Base */
+/* Base styles */
 body {
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
+  background-color: white;
+  margin: 0;
 }
 
 /* Navbar */
+.navbar {
+  background-color: #ffffff;
+}
+
 .navbar-brand {
   font-weight: bold;
-  color: #343a40;
+  color: #2d2d2d;
 }
+
 .navbar .nav-link,
 .navbar .navbar-brand {
-  transition: color 0.3s ease-in-out;
+  color: #2d2d2d;
+  transition: color 0.3s ease;
 }
+
 .navbar .nav-link:hover,
 .navbar .navbar-brand:hover {
   color: #8f277a !important;
+  text-decoration: none;
 }
 
-/* Spinner */
-#spinner {
-  transition: opacity 0.5s ease;
+/* Hero */
+#hero {
+  padding-top: 5rem;
 }
 
-/* Brand Buttons */
+.hero img {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+/* Buttons */
 .btn-brand {
   background-color: #a9338f;
   color: white;
   border: none;
 }
+
 .btn-brand:hover {
   background-color: #8f277a;
   color: white;
 }
 
-/* Tech stack */
+/* Tech Stack Icons */
 .tech-icon {
   text-align: center;
   font-size: 3rem;
 }
+
 .tech-icon span {
   display: block;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+
 .tech-icon i {
   transition: transform 0.4s ease-in-out;
 }
+
 .tech-icon i:hover {
   transform: translateY(-5px) scale(1.15);
 }
 
 /* Carousel */
 .carousel-item img {
+  max-height: 300px;
   object-fit: cover;
-  height: 300px;
-  width: 100%;
 }
 
 /* Footer */
@@ -64,9 +82,15 @@ footer {
   padding: 1rem;
   border-top: 2px solid #8f277a;
 }
-.footer-links a {
-  color: #343a40;
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
 }
-.footer-links a:hover {
-  color: #8f277a;
+
+/* Spinner */
+#spinner {
+  transition: opacity 0.5s ease;
 }
