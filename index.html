@@ -50,19 +50,6 @@
     data-bs-offset="70"
     tabindex="0"
   >
-    <!-- Spinner -->
-    <div
-      id="spinner"
-      class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex justify-content-center align-items-center"
-      style="z-index: 9999"
-    >
-      <div
-        class="spinner-border text-secondary"
-        role="status"
-        aria-label="Page loading..."
-      ></div>
-    </div>
-
     <!-- SEO -->
     <meta
       name="description"
@@ -380,17 +367,6 @@
     <script>
       AOS.init();
       document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script>
-      window.addEventListener("load", function () {
-        const spinner = document.getElementById("spinner");
-        if (spinner) {
-          spinner.style.opacity = "0";
-          setTimeout(() => {
-            spinner.style.display = "none";
-          }, 500);
-        }
-      });
     </script>
   </body>
 </html>

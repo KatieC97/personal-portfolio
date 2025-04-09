@@ -2,40 +2,30 @@
 body {
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  background-color: white;
 }
 
-/* Navbar styles */
+/* Navbar */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #343a40;
+}
+
 .navbar .nav-link {
-  color: #333 !important;
-  transition: color 0.3s ease-in-out;
-}
-.navbar .nav-link,
-.navbar .nav-link:focus {
-  color: #8f277a !important;
-}
-.navbar .navbar-brand {
-  color: #2f2f2f;
+  color: #343a40;
   transition: color 0.3s ease-in-out;
 }
 
-.navbar .navbar-brand:hover,
-.navbar .navbar:focus {
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
   color: #8f277a !important;
+  text-decoration: none;
 }
 
-/* Hero section image */
-#hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 350px;
-  object-fit: cover;
-}
-
-/* Buttons */
+/* Custom brand button */
 .btn-brand {
   background-color: #a9338f;
   color: white;
@@ -45,6 +35,12 @@ body {
 .btn-brand:hover {
   background-color: #8f277a;
   color: white;
+}
+
+/* Hero banner */
+#hero img {
+  max-height: 350px;
+  object-fit: cover;
 }
 
 /* Tech stack icons */
@@ -78,6 +74,7 @@ body {
 footer {
   background-color: #f8f9fa;
   padding: 1rem;
+  text-align: center;
   border-top: 2px solid #8f277a;
 }
 
@@ -86,10 +83,4 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-}
-
-/* Spinner */
-#spinner {
-  z-index: 999;
-  pointer-events: none;
 }
