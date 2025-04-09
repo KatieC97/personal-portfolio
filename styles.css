@@ -1,18 +1,58 @@
+/* Base styles */
 body {
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
-.hero {
-  height: 60vh;
-  background: url("assets/your-canva-banner.jpg") center/cover no-repeat;
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  color: #8f277a;
+}
+
+nav .nav-link:hover,
+nav .navbar-brand:hover {
+  color: #8f277a !important;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #8f277a !important;
+}
+
+/* Hero section */
+#hero {
+  background: linear-gradient(to top, #fbdce7, #dceaff);
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  color: white;
+  align-items: center;
   text-align: center;
 }
 
+/* Custom brand button */
+.btn-brand {
+  background-color: #a9338f;
+  color: white;
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: #8f277a;
+  color: white;
+}
+
+/* Carousel */
+.carousel-item img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+/* Tech stack icons */
 .tech-icon {
   text-align: center;
   font-size: 3rem;
@@ -24,44 +64,48 @@ body {
   margin-top: 0.5rem;
 }
 
-.carousel-item img {
-  max-height: 300px;
-  object-fit: cover;
+.tech-icon i {
+  transition: transform 0.4s ease-in-out;
 }
 
+.tech-icon i:hover {
+  transform: translateY(-5px) scale(1.15);
+}
+
+/* Skills (if used) */
+.skills i {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #8f277a;
+}
+
+/* Footer */
 footer {
   background-color: #f8f9fa;
   padding: 1rem;
-  position: relative;
+  text-align: center;
+  border-top: 2px solid #8f277a;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1rem;
-}
+/* Spinner (loader) */
 #spinner {
   transition: opacity 0.5s ease;
 }
-.btn-brand {
-  background-color: #a9338f;
-  color: white;
-  border: none;
-}
-.btn-brand:hover {
+
+/* Optional utility button */
+.btn-custom {
   background-color: #8f277a;
   color: white;
 }
+
+.btn-custom:hover {
+  background-color: #6c1d5e;
+  color: white;
+}
+
 .navbar .nav-link:hover,
 .navbar .navbar-brand:hover {
   color: #8f277a !important;
   transition: color 0.3s ease-in-out;
-  text-decoration: none;
-}
-.tech-icon i {
-  transition: transform 0.4s ease-in-out;
-}
-.tech-icon i:hover {
-  transform: translateY(-5px) scale(1.15);
+  text-decoration: none !important;
 }
