@@ -3,51 +3,65 @@ body {
   scroll-behavior: smooth;
 }
 
-.navbar-brand {
-  font-weight: bold;
-  color: #8f277a;
-}
-
-.nav-link.active {
-  font-weight: bold;
-  color: #8f277a !important;
-}
-
-#hero {
-  background: linear-gradient(to top, #fbdce7, #dceaff);
-  height: 100vh;
+.hero {
+  height: 60vh;
+  background: url("assets/your-canva-banner.jpg") center/cover no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  color: white;
   text-align: center;
 }
 
-.carousel-item img {
-  object-fit: cover;
-  height: 400px;
-  width: 100%;
+.tech-icon {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.skills i {
-  font-size: 2rem;
-  margin: 1rem;
-  color: #8f277a;
+.tech-icon span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.carousel-item img {
+  max-height: 300px;
+  object-fit: cover;
 }
 
 footer {
   background-color: #f8f9fa;
   padding: 1rem;
-  text-align: center;
-  border-top: 2px solid #8f277a;
+  position: relative;
 }
 
-.btn-custom {
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+#spinner {
+  transition: opacity 0.5s ease;
+}
+.btn-brand {
+  background-color: #a9338f;
+  color: white;
+  border: none;
+}
+.btn-brand:hover {
   background-color: #8f277a;
   color: white;
 }
-
-.btn-custom:hover {
-  background-color: #6c1d5e;
-  color: white;
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #8f277a !important;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+.tech-icon i {
+  transition: transform 0.4s ease-in-out;
+}
+.tech-icon i:hover {
+  transform: translateY(-5px) scale(1.15);
 }
