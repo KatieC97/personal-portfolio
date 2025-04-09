@@ -104,9 +104,10 @@ section#hero {
   display: block;
   width: 100%;
   height: auto;
+  max-height: none;
+  object-fit: unset;
   margin: 0 auto !important;
   padding: 0 !important;
-  object-fit: contain;
 }
 
 #about {
@@ -115,12 +116,11 @@ section#hero {
 }
 @media (max-width: 576px) {
   section#hero {
-    margin-bottom: -20px !important;
+    margin-bottom: 0 !important;
   }
-}
-@media (max-width: 576px) {
   #hero img {
+    max-height: 200px;
     height: auto;
-    max-height: 250px;
+    object-fit: contain;
   }
 }
