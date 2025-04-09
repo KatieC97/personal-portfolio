@@ -97,3 +97,14 @@ section {
 #hero {
   min-height: auto !important;
 }
+@media (max-width: 576px) {
+  section#hero {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #hero img {
+    margin-bottom: 0 !important;
+    display: block;
+    object-fit: cover;
+  }
+}
