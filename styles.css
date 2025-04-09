@@ -2,40 +2,33 @@
 body {
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
-  background-color: white;
-  margin: 0;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .navbar-brand {
   font-weight: bold;
-  color: #2d2d2d;
+  color: #2c2c2c;
 }
 
 .navbar .nav-link,
 .navbar .navbar-brand {
-  color: #2d2d2d;
-  transition: color 0.3s ease;
+  color: #2c2c2c;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar .nav-link:hover,
 .navbar .navbar-brand:hover {
   color: #8f277a !important;
-  text-decoration: none;
 }
 
-/* Hero */
+/* Hero section fix */
 #hero {
-  padding-top: 5rem;
-}
-
-.hero img {
-  max-height: 350px;
-  object-fit: cover;
+  padding-top: 80px;
+  background-color: #ffffff;
 }
 
 /* Buttons */
@@ -50,7 +43,7 @@ body {
   color: white;
 }
 
-/* Tech Stack Icons */
+/* Tech stack icons */
 .tech-icon {
   text-align: center;
   font-size: 3rem;
@@ -70,24 +63,27 @@ body {
   transform: translateY(-5px) scale(1.15);
 }
 
-/* Carousel */
+/* Carousel fix */
 .carousel-item img {
-  max-height: 300px;
   object-fit: cover;
+  height: 300px;
+  width: 100%;
 }
 
-/* Footer */
-footer {
-  background-color: #f8f9fa;
-  padding: 1rem;
-  border-top: 2px solid #8f277a;
-}
-
+/* Footer fix */
 .footer-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-top: 2px solid #8f277a;
+  text-align: center;
 }
 
 /* Spinner */
