@@ -2,6 +2,7 @@
 body {
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
 
 /* Navbar */
@@ -101,10 +102,11 @@ section#hero {
 }
 #hero img {
   display: block;
+  width: 100%;
+  height: auto;
   margin: 0 auto !important;
   padding: 0 !important;
-  max-height: 350px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #about {
@@ -114,5 +116,11 @@ section#hero {
 @media (max-width: 576px) {
   section#hero {
     margin-bottom: -20px !important;
+  }
+}
+@media (max-width: 576px) {
+  #hero img {
+    height: auto;
+    max-height: 250px;
   }
 }
