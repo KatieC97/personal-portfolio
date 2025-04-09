@@ -94,20 +94,25 @@ footer {
 section {
   min-height: 60vh;
 }
-#hero {
+section#hero {
   min-height: auto !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
+#hero img {
+  display: block;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  max-height: 350px;
+  object-fit: cover;
+}
+
 #about {
-  margin-top: 0;
+  margin-top: 0 !important;
+  padding-top: 3rem !important;
 }
 @media (max-width: 576px) {
   section#hero {
-    margin-bottom: -10px !important;
-    padding-bottom: 0 !important;
-  }
-  #hero img {
-    margin-bottom: 0 !important;
-    display: block;
-    object-fit: cover;
+    margin-bottom: -20px !important;
   }
 }
