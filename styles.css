@@ -24,7 +24,11 @@ body {
   color: #8f277a !important;
   text-decoration: none;
 }
-
+.nav-link.active {
+  color: #8f277a !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
 /* Custom brand button */
 .btn-brand {
   background-color: #a9338f;
