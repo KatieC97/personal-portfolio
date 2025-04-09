@@ -1,0 +1,53 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #8f277a;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #8f277a !important;
+}
+
+#hero {
+  background: linear-gradient(to top, #fbdce7, #dceaff);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.skills i {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #8f277a;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid #8f277a;
+}
+
+.btn-custom {
+  background-color: #8f277a;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #6c1d5e;
+  color: white;
+}
