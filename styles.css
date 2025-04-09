@@ -43,10 +43,8 @@ body {
 
 /* Hero banner */
 #hero img {
-  max-height: 350px;
-  object-fit: cover;
-  width: 100%;
-  display: block;
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
 /* Tech stack icons */
@@ -95,4 +93,7 @@ footer {
 
 section {
   min-height: 60vh;
+}
+#hero {
+  min-height: auto !important;
 }
