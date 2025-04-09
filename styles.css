@@ -1,27 +1,29 @@
-/* General */
+/* Base */
 body {
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
-  background-color: white;
 }
 
 /* Navbar */
 .navbar-brand {
-  color: #2f2f2f; /* dark slate */
+  font-weight: bold;
+  color: #343a40;
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
   transition: color 0.3s ease-in-out;
 }
-.navbar-brand:hover {
-  color: #8f277a;
-}
-.navbar .nav-link {
-  color: #2f2f2f;
-  transition: color 0.3s ease-in-out;
-}
-.navbar .nav-link:hover {
-  color: #8f277a;
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #8f277a !important;
 }
 
-/* Buttons */
+/* Spinner */
+#spinner {
+  transition: opacity 0.5s ease;
+}
+
+/* Brand Buttons */
 .btn-brand {
   background-color: #a9338f;
   color: white;
@@ -32,12 +34,28 @@ body {
   color: white;
 }
 
-/* Tech Icons Hover */
+/* Tech stack */
+.tech-icon {
+  text-align: center;
+  font-size: 3rem;
+}
+.tech-icon span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
 .tech-icon i {
   transition: transform 0.4s ease-in-out;
 }
 .tech-icon i:hover {
   transform: translateY(-5px) scale(1.15);
+}
+
+/* Carousel */
+.carousel-item img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
 }
 
 /* Footer */
@@ -46,8 +64,9 @@ footer {
   padding: 1rem;
   border-top: 2px solid #8f277a;
 }
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer-links a {
+  color: #343a40;
+}
+.footer-links a:hover {
+  color: #8f277a;
 }
