@@ -84,14 +84,9 @@
         color: white;
       }
       .navbar .nav-link:hover,
-      .navbar .nav-item:hover .nav-link,
       .navbar .navbar-brand:hover {
         color: #8f277a !important;
         transition: color 0.3s ease-in-out;
-        text-decoration: none;
-      }
-      .nav-hover:hover {
-        color: #8f277a !important;
       }
       .tech-icon i {
         transition: transform 0.4s ease-in-out;
@@ -150,31 +145,34 @@
       id="navbar"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold nav-hover" href="#">dev.Katie()</a>
+        <a class="navbar-brand fw-bold" href="#">dev.Katie()</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navContent"
+          aria-controls="navContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link nav-hover" href="#hero">Home</a>
+              <a class="nav-link" href="#hero">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hover" href="#about">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hover" href="#stack">Tech Stack</a>
+              <a class="nav-link" href="#stack">Tech Stack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hover" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hover" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
