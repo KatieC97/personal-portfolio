@@ -42,12 +42,6 @@ body {
   color: white;
 }
 
-/* Hero banner */
-#hero img {
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
 /* Tech stack icons */
 .tech-icon {
   text-align: center;
@@ -95,32 +89,44 @@ footer {
 section {
   min-height: 60vh;
 }
-section#hero {
-  min-height: auto !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
 #hero img {
   display: block;
   width: 100%;
   height: auto;
   max-height: none;
-  object-fit: unset;
+  object-fit: contain; /* make sure it's not cropped */
   margin: 0 auto !important;
   padding: 0 !important;
 }
 
+/* Hero section spacing fix */
+section#hero {
+  min-height: auto !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* About section spacing fix */
 #about {
   margin-top: 0 !important;
   padding-top: 3rem !important;
 }
+
+/* Mobile fix: override banner sizing + spacing */
 @media (max-width: 576px) {
+  #hero img {
+    max-height: 200px !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
   section#hero {
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
-  #hero img {
-    max-height: 200px;
-    height: auto;
-    object-fit: contain;
-  }
+}
+
+/* Scroll offset so navbar doesn't cover sections */
+body {
+  scroll-padding-top: 70px;
 }
