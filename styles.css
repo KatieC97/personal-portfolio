@@ -97,9 +97,12 @@ section {
 #hero {
   min-height: auto !important;
 }
+#about {
+  margin-top: 0;
+}
 @media (max-width: 576px) {
   section#hero {
-    margin-bottom: 0 !important;
+    margin-bottom: -10px !important;
     padding-bottom: 0 !important;
   }
   #hero img {
