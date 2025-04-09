@@ -72,6 +72,7 @@
     <meta name="author" content="Katie Cox" />
     <!-- Navbar -->
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
       id="navbar"
@@ -198,141 +199,119 @@
       <div class="container text-center">
         <h2 class="mb-4">Projects</h2>
 
-        <!-- Filter Buttons -->
-        <div class="mb-4">
-          <button
-            class="btn btn-brand me-2 filter-btn"
-            data-filter="all"
-            aria-label="Show all projects"
-          >
-            All
-          </button>
-          <button
-            class="btn btn-brand me-2 filter-btn"
-            data-filter="html"
-            aria-label="Filter HTML projects"
-          >
-            HTML
-          </button>
-          <button
-            class="btn btn-brand me-2 filter-btn"
-            data-filter="bootstrap"
-            aria-label="Filter Bootstrap projects"
-          >
-            Bootstrap
-          </button>
-          <button
-            class="btn btn-brand me-2 filter-btn"
-            data-filter="tailwind"
-            aria-label="Filter Tailwind projects"
-          >
-            Tailwind
-          </button>
-          <button
-            class="btn btn-brand filter-btn"
-            data-filter="js"
-            aria-label="Filter JavaScript projects"
-          >
-            JavaScript
-          </button>
-        </div>
+        <!-- Projects Carousel -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Projects</h2>
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-        <!-- Project Cards -->
-        <div class="row" id="projectGrid">
-          <div class="col-md-6 col-lg-4 mb-4 project-item html">
-            <div class="card h-100">
-              <img
-                src="assets/screenshots/Html.png"
-                class="card-img-top"
-                alt="HTML Technical Doc Page"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">HTML Technical Doc Page</h5>
-                <a
-                  href="https://katiec97.github.io/html-technical-doc-page/"
-                  class="btn btn-brand"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View HTML Technical Doc Page"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4 project-item bootstrap">
-            <div class="card h-100">
-              <img
-                src="assets/screenshots/Sims.png"
-                class="card-img-top"
-                alt="Sims Product Landing Page"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sims Product Landing Page</h5>
-                <a
-                  href="https://katiec97.github.io/the-sims-product-landing-page/"
-                  class="btn btn-brand"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Sims Product Landing Page"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4 project-item html">
-            <div class="card h-100">
-              <img
-                src="assets/screenshots/Fitz.png"
-                class="card-img-top"
-                alt="Fitzgerald Tribute Page"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Fitzgerald Tribute Page</h5>
-                <a
-                  href="https://katiec97.github.io/fitzgerald-tribute-page/"
-                  class="btn btn-brand"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Fitzgerald Tribute Page"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4 project-item js">
-            <div class="card h-100">
-              <img
-                src="assets/screenshots/Spider.png"
-                class="card-img-top"
-                alt="Spider-Man Fan Page"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Spider-Man Fan Registration</h5>
-                <a
-                  href="https://katiec97.github.io/SpiderFanPage/"
-                  class="btn btn-brand"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Spider-Man Fan Page"
-                >
-                  View Project
-                </a>
-              </div>
+        <div class="carousel-item active">
+          <div class="card mx-auto" style="max-width: 25rem">
+            <img
+              src="assets/screenshots/Html.png"
+              class="card-img-top"
+              alt="HTML Technical Doc Page"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HTML Technical Doc Page</h5>
+              <a
+                href="https://katiec97.github.io/html-technical-doc-page/"
+                target="_blank"
+                class="btn btn-brand"
+              >
+                View Project
+              </a>
             </div>
           </div>
         </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 25rem">
+            <img
+              src="assets/screenshots/Sims.png"
+              class="card-img-top"
+              alt="Sims Product Landing Page"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sims Product Landing Page</h5>
+              <a
+                href="https://katiec97.github.io/the-sims-product-landing-page/"
+                target="_blank"
+                class="btn btn-brand"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 25rem">
+            <img
+              src="assets/screenshots/Fitz.png"
+              class="card-img-top"
+              alt="Fitzgerald Tribute Page"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fitzgerald Tribute Page</h5>
+              <a
+                href="https://katiec97.github.io/fitzgerald-tribute-page/"
+                target="_blank"
+                class="btn btn-brand"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 25rem">
+            <img
+              src="assets/screenshots/Spider.png"
+              class="card-img-top"
+              alt="Spider-Man Fan Page"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spider-Man Fan Registration</h5>
+              <a
+                href="https://katiec97.github.io/SpiderFanPage/"
+                target="_blank"
+                class="btn btn-brand"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#projectCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#projectCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-5">
       <div class="container text-center">
@@ -380,8 +359,11 @@
     </section>
 
     <!-- Footer -->
+    <!-- Footer -->
     <footer class="text-center mt-5">
-      <div class="container footer-links">
+      <div
+        class="container footer-links d-flex justify-content-between align-items-center"
+      >
         <a
           href="https://github.com/KatieC97"
           target="_blank"
