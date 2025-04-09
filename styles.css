@@ -8,31 +8,21 @@ body {
 }
 
 /* Navbar styles */
-.navbar {
-  background-color: #f8f9fa;
+.navbar .nav-link {
+  color: #333 !important;
+  transition: color 0.3s ease-in-out;
 }
-
-.navbar-brand {
-  font-weight: bold;
-  color: #2c2c2c;
+.navbar .nav-link,
+.navbar .nav-link:focus {
+  color: #8f277a !important;
+}
+.navbar .navbar-brand {
+  color: #2f2f2f;
   transition: color 0.3s ease-in-out;
 }
 
-.navbar-brand:hover {
-  color: #8f277a !important;
-}
-
-.nav-link {
-  color: #2c2c2c;
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-  color: #8f277a !important;
-}
-
-.nav-link.active {
-  font-weight: bold;
+.navbar .navbar-brand:hover,
+.navbar .navbar:focus {
   color: #8f277a !important;
 }
 
@@ -100,5 +90,6 @@ footer {
 
 /* Spinner */
 #spinner {
-  transition: opacity 0.5s ease;
+  z-index: 999;
+  pointer-events: none;
 }
