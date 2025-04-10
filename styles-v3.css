@@ -8,13 +8,16 @@ body {
 /* Navbar */
 .navbar {
   background-color: #f8f9fa;
-  margin-bottom: 1.5rem;
-} /* pushes hero down slightly */
-/* Hero section */
+  margin-bottom: 1.5rem; /* helps push hero down */
+  /* Reset spacing for full sections */
+  section {
+    min-height: 60vh;
+  }
+}
+/* --- Hero Banner --- */
 #hero {
   margin: 0 !important;
   padding: 0 !important;
-  min-height: unset !important;
 }
 
 #hero img {
@@ -22,22 +25,20 @@ body {
   width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 280px; /* reduced zoom */
+  max-height: 300px; /* match Domï */
   margin: 0 auto;
-  padding: 0;
 }
 
-/* About Me section */
+/* --- About Section --- */
 #about {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
-/* Domï banner */
+/* --- Domï Banner --- */
 #domi {
-  padding: 2rem 0 !important;
-  margin: 0 !important;
-  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 #domi img {
@@ -45,32 +46,35 @@ body {
   width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 280px;
+  max-height: 300px;
   margin: 0 auto;
-  padding: 0;
 }
 
-/* Tech Stack section */
+/* --- Tech Stack --- */
 #stack {
-  padding-top: 1rem !important;
+  padding-top: 2rem;
 }
 
-/* Mobile optimizations */
+/* --- Mobile Tweaks --- */
 @media (max-width: 576px) {
   #hero img {
-    max-height: 180px;
+    max-height: 250px;
   }
 
   #about {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
-  #domi {
-    padding: 1.5rem 0 !important;
+  #domi img {
+    max-height: 260px; /* slight boost */
   }
 
-  #stack {
-    padding-top: 0.5rem !important;
+  .tech-icon {
+    font-size: 2.5rem;
+  }
+
+  .tech-icon span {
+    font-size: 0.9rem;
   }
 }
