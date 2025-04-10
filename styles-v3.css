@@ -8,98 +8,13 @@ body {
 /* Navbar */
 .navbar {
   background-color: #f8f9fa;
-  margin-bottom: 1rem;
-}
-
-.navbar-brand {
-  font-weight: bold;
-  color: #343a40;
-}
-
-.navbar .nav-link {
-  color: #343a40;
-  transition: color 0.3s ease-in-out;
-}
-
-.navbar .nav-link:hover,
-.navbar .navbar-brand:hover {
-  color: #8f277a !important;
-  text-decoration: none;
-}
-
-.nav-link.active {
-  color: #8f277a !important;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/* Custom brand button */
-.btn-brand {
-  background-color: #a9338f;
-  color: white;
-  border: none;
-}
-
-.btn-brand:hover {
-  background-color: #8f277a;
-  color: white;
-}
-
-/* Tech stack icons */
-.tech-icon {
-  text-align: center;
-  font-size: 3rem;
-}
-
-.tech-icon span {
-  display: block;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
-.tech-icon i {
-  transition: transform 0.4s ease-in-out;
-}
-
-.tech-icon i:hover {
-  transform: translateY(-5px) scale(1.15);
-}
-
-/* Carousel */
-.carousel-item img {
-  object-fit: cover;
-  height: 300px;
-  width: 100%;
-}
-
-/* Footer */
-footer {
-  background-color: #f8f9fa;
-  padding: 1rem;
-  text-align: center;
-  border-top: 2px solid #8f277a;
-  position: relative;
-  z-index: 1;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1rem;
-}
-
-/* Section spacing baseline */
-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  min-height: 60vh;
-}
-
-/* HERO */
+  margin-bottom: 1.5rem;
+} /* pushes hero down slightly */
+/* Hero section */
 #hero {
-  padding: 0 !important;
   margin: 0 !important;
+  padding: 0 !important;
+  min-height: unset !important;
 }
 
 #hero img {
@@ -107,18 +22,21 @@ section {
   width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 320px;
+  max-height: 280px; /* reduced zoom */
   margin: 0 auto;
   padding: 0;
 }
 
-/* ABOUT */
+/* About Me section */
 #about {
-  text-align: center;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
-/* DOMI BANNER */
+/* Domï banner */
 #domi {
+  padding: 2rem 0 !important;
+  margin: 0 !important;
   text-align: center;
 }
 
@@ -127,36 +45,32 @@ section {
   width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 300px;
+  max-height: 280px;
   margin: 0 auto;
   padding: 0;
 }
 
-/* TECH STACK */
+/* Tech Stack section */
 #stack {
-  padding-top: 0 !important; /* override if needed */
+  padding-top: 1rem !important;
 }
 
-/* Mobile optimization */
+/* Mobile optimizations */
 @media (max-width: 576px) {
-  #hero {
-    height: auto !important;
-    min-height: 0 !important;
-  }
-
   #hero img {
-    max-height: 200px;
+    max-height: 180px;
   }
 
-  #hero,
-  #about,
+  #about {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
   #domi {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-    margin-bottom: 0 !important;
+    padding: 1.5rem 0 !important;
   }
 
   #stack {
-    padding-top: 1rem !important;
+    padding-top: 0.5rem !important;
   }
 }
