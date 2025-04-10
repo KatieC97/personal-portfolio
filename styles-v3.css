@@ -92,7 +92,7 @@ section {
 /* General styling for the hero section */
 /* HERO IMAGE – shared styles */
 #hero {
-  margin-bottom: 3rem !important;
+  margin-bottom: 4rem !important;
   padding: 0 !important;
 }
 
@@ -109,8 +109,8 @@ section {
 /* ABOUT section spacing (cleaned) */
 #about {
   margin: 0 auto !important;
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
 }
 
 /* SCROLL FIX for anchor links */
@@ -140,9 +140,8 @@ body {
 }
 /* DOMI BANNER – shared styling with hero banner */
 #domi {
-  padding-top: 3rem !important;
+  padding-top: 5rem !important;
   padding-bottom: 3rem !important;
-  margin: 0 auto !important;
   text-align: center;
 }
 
