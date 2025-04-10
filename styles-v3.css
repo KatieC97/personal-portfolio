@@ -16,7 +16,8 @@ body {
 }
 /* --- Hero Banner --- */
 #hero {
-  margin-top: 5rem !important;
+  margin-top: 4.5rem !important;
+  margin-bottom: 2.5rem !important;
   padding: 0 !important;
 }
 
@@ -55,19 +56,24 @@ body {
   padding-top: 2rem;
 }
 
+.tech-icon {
+  font-size: 3.5rem;
+}
+.tech-icon span {
+  font-size: 1.1rem;
+}
+
 /* --- Mobile Tweaks --- */
 @media (max-width: 576px) {
-  #hero img {
-    max-height: 250px;
+  #hero img,
+  #domi img {
+    max-height: 260px;
+    object-fit: contain;
   }
 
   #about {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  #domi img {
-    max-height: 260px; /* slight boost */
   }
 
   .tech-icon {
@@ -80,7 +86,7 @@ body {
 }
 @media (max-width: 768px) {
   .tech-icon {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   .tech-icon span {
     font-size: 1.1rem;
