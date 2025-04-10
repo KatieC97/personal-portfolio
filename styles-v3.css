@@ -110,8 +110,9 @@ section {
 
 /* ABOUT section spacing (cleaned) */
 #about {
-  margin-top: 0 !important;
+  margin: 0 auto !important;
   padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 /* SCROLL FIX for anchor links */
