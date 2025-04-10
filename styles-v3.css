@@ -8,6 +8,7 @@ body {
 /* Navbar */
 .navbar {
   background-color: #f8f9fa;
+  margin-bottom: 1rem;
 }
 
 .navbar-brand {
@@ -25,11 +26,13 @@ body {
   color: #8f277a !important;
   text-decoration: none;
 }
+
 .nav-link.active {
   color: #8f277a !important;
   font-weight: bold;
   text-decoration: underline;
 }
+
 /* Custom brand button */
 .btn-brand {
   background-color: #a9338f;
@@ -86,55 +89,36 @@ footer {
   font-size: 1rem;
 }
 
+/* Section spacing baseline */
 section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   min-height: 60vh;
 }
-/* General styling for the hero section */
-/* HERO IMAGE – shared styles */
+
+/* HERO */
 #hero {
-  margin-bottom: 3rem !important;
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 #hero img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain; /* preserve full image */
+  object-fit: contain;
   max-height: 320px;
   margin: 0 auto;
   padding: 0;
 }
 
-/* ABOUT section spacing (cleaned) */
+/* ABOUT */
 #about {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  text-align: center;
 }
 
-/* SCROLL FIX for anchor links */
-body {
-  scroll-padding-top: 70px;
-}
-
-/* MOBILE FIX – reduce gap under hero */
-@media (max-width: 576px) {
-  #hero {
-    height: auto !important;
-    min-height: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  #hero img {
-    max-height: 200px;
-    object-fit: contain;
-  }
-}
-
-/* DOMI BANNER – shared styling with hero banner */
+/* DOMI BANNER */
 #domi {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
   text-align: center;
 }
 
@@ -148,8 +132,22 @@ body {
   padding: 0;
 }
 
+/* TECH STACK */
+#stack {
+  padding-top: 0 !important; /* override if needed */
+}
+
 /* Mobile optimization */
 @media (max-width: 576px) {
+  #hero {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  #hero img {
+    max-height: 200px;
+  }
+
   #hero,
   #about,
   #domi {
@@ -157,11 +155,8 @@ body {
     padding-bottom: 2rem !important;
     margin-bottom: 0 !important;
   }
+
   #stack {
     padding-top: 1rem !important;
   }
-}
-
-#stack {
-  padding-top: 0 !important;
 }
