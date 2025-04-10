@@ -5,29 +5,43 @@ body {
   scroll-padding-top: 70px;
 }
 
+.btn-brand {
+  background-color: #a9338f;
+  color: white;
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: #8f277a;
+  color: white;
+}
+
 /* Navbar */
 .navbar {
   background-color: #f8f9fa;
   margin-bottom: 1.5rem; /* helps push hero down */
-  /* Reset spacing for full sections */
-  section {
-    min-height: 60vh;
-  }
+}
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 /* --- Hero Banner --- */
-#hero {
-  margin-top: 4.5rem !important;
-  margin-bottom: 2.5rem !important;
-  padding: 0 !important;
+#hero,
+#domi {
+  margin-top: 0 !important;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: none;
 }
 
-#hero img {
+#hero img,
+#domi img {
+  max-height: 300px;
+  object-fit: contain;
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  max-height: 300px; /* match Domï */
   margin: 0 auto;
+  border: none;
 }
 
 /* --- About Section --- */
@@ -36,33 +50,24 @@ body {
   padding-bottom: 2.5rem;
 }
 
-/* --- Domï Banner --- */
-#domi {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-#domi img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  max-height: 300px;
-  margin: 0 auto;
-}
-
 /* --- Tech Stack --- */
 #stack {
   padding-top: 2rem;
 }
 
 .tech-icon {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 .tech-icon span {
   font-size: 1.1rem;
 }
-
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
 /* --- Mobile Tweaks --- */
 @media (max-width: 576px) {
   #hero img,
@@ -77,11 +82,11 @@ body {
   }
 
   .tech-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .tech-icon span {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 768px) {
