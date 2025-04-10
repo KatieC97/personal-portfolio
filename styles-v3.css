@@ -92,7 +92,7 @@ section {
 /* General styling for the hero section */
 /* HERO IMAGE – shared styles */
 #hero {
-  margin-bottom: 4rem !important;
+  margin-bottom: 3rem !important;
   padding: 0 !important;
 }
 
@@ -108,9 +108,8 @@ section {
 
 /* ABOUT section spacing (cleaned) */
 #about {
-  margin: 0 auto !important;
-  padding-top: 4rem !important;
-  padding-bottom: 4rem !important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 /* SCROLL FIX for anchor links */
@@ -132,15 +131,9 @@ body {
   }
 }
 
-@media (min-width: 992px) {
-  #hero img {
-    max-height: 320px;
-    object-fit: contain;
-  }
-}
 /* DOMI BANNER – shared styling with hero banner */
 #domi {
-  padding-top: 5rem !important;
+  padding-top: 3rem !important;
   padding-bottom: 3rem !important;
   text-align: center;
 }
@@ -157,21 +150,18 @@ body {
 
 /* Mobile optimization */
 @media (max-width: 576px) {
+  #hero,
+  #about,
   #domi {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
     margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
   }
-
-  #domi img {
-    max-height: 200px;
-    object-fit: contain;
+  #stack {
+    padding-top: 1rem !important;
   }
 }
 
-/* Desktop limit (optional) */
-@media (min-width: 992px) {
-  #domi img {
-    max-height: 300px;
-    object-fit: contain;
-  }
+#stack {
+  padding-top: 0 !important;
 }
