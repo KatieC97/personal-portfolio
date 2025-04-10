@@ -89,44 +89,32 @@ footer {
 section {
   min-height: 60vh;
 }
+/* General styling for the hero section */
+#hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 #hero img {
-  display: block;
   width: 100%;
   height: auto;
-  max-height: none;
-  object-fit: contain; /* make sure it's not cropped */
-  margin: 0 auto !important;
-  padding: 0 !important;
+  display: block;
 }
 
-/* Hero section spacing fix */
-section#hero {
-  min-height: auto !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* About section spacing fix */
-#about {
-  margin-top: 0 !important;
-  padding-top: 3rem !important;
-}
-
-/* Mobile fix: override banner sizing + spacing */
+/* Adjustments for devices with a max-width of 576px (typical mobile devices) */
 @media (max-width: 576px) {
-  #hero img {
-    max-height: 200px !important;
-    height: auto !important;
-    object-fit: contain !important;
+  #hero {
+    margin-top: 56px; /* Adjust this value based on your navbar's height */
   }
 
-  section#hero {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  #hero img {
+    max-height: 250px; /* Adjust this value as needed */
+    object-fit: cover;
   }
 }
 
 /* Scroll offset so navbar doesn't cover sections */
 body {
-  scroll-padding-top: 70px;
+  scroll-padding-top: 56px;
 }
