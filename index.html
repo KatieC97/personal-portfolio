@@ -26,7 +26,7 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Your CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles-v3.css" />
 
     <!-- Google Analytics -->
@@ -97,7 +97,7 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="mb-0">
+    <section id="hero" class="mb-0 no-padding">
       <div class="container-fluid px-0">
         <img
           src="assets/portfolio-banner.png"
@@ -116,7 +116,7 @@
           backend delivery into creative, user-focused software solutions.
         </p>
         <a
-          href="assets/Katie-Cox-CV.pdf"
+          href="assets/Katie_Cox_CV.pdf"
           download
           class="btn btn-brand btn-outline-dark mt-3"
           >Download my CV</a
@@ -124,13 +124,13 @@
       </div>
     </section>
     <!-- Domï Banner Section -->
-    <section id="domi" class="text-center">
+    <section id="domi" class="text-center no-padding">
       <div class="container-fluid px-0">
         <img
           src="assets/Domi.png"
           alt="Domï App Coming Soon Banner"
           class="img-fluid w-100 shadow-sm"
-          style="max-height: 300px; object-fit: contain"
+          style="height: auto; max-width: 100%"
         />
       </div>
     </section>
@@ -144,12 +144,19 @@
           <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
             <i class="devicon-html5-plain colored"></i><span>HTML</span>
           </div>
-          <div class="col tech-icon data-aos="zoom-in" data-aos-delay="100"">
+          <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100"">
           <i class="devicon-css3-plain colored"></i><span>CSS</span>
         </div>
         <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
           <i class="devicon-javascript-plain colored"></i
           ><span>JavaScript</span>
+        </div>
+        <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
+          <i class="devicon-react-original colored"></i><span>React</span>
+        </div>
+        <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
+          <i class="devicon-nodejs-plain-wordmark colored"></i
+          ><span>Node.js</span>
         </div>
         <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
           <i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span>
@@ -164,13 +171,13 @@
           <i class="devicon-python-plain colored"></i><span>Python</span>
         </div>
         <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
+          <i class="devicon-fastapi-plain colored"></i><span>FastAPI</span>
+        </div>
+        <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
           <i class="devicon-git-plain colored"></i><span>Git</span>
         </div>
         <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
           <i class="devicon-github-original"></i><span>GitHub</span>
-        </div>
-        <div class="col tech-icon" data-aos="zoom-in" data-aos-delay="100">
-          <i class="devicon-fastapi-plain colored"></i><span>FastAPI</span>
         </div>
       </div>
     </section>
@@ -194,6 +201,52 @@
             >
               <div class="card mx-auto" style="max-width: 25rem">
                 <img
+                  src="assets/screenshots/Noto.png"
+                  class="card-img-top"
+                  alt="Noto Mood Tracker Preview"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Noto (React App)</h5>
+                  <p class="card-text">
+                    Minimalist wellbeing app built with React. Tracks daily
+                    moods, shows chart history, saves user notes, and offers A/B
+                    tested suggestions.
+                  </p>
+                  <a
+                    href="https://katiec97.github.io/noto-app"
+                    class="btn btn-brand"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="carousel-item">
+              <div class="card mx-auto" style="max-width: 25rem">
+                <img
+                  src="assets/screenshots/Domi-preview.png"
+                  class="card-img-top"
+                  alt="Domï Inventory App Preview"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Domï (Flutter App – Coming Soon)</h5>
+                  <p class="card-text">
+                    A mobile-first inventory tracker built with Flutter and
+                    FastAPI. Features barcode scanning and SQLite storage.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="carousel-item">
+              <div class="card mx-auto" style="max-width: 25rem">
+                <img
                   src="assets/screenshots/Html.png"
                   class="card-img-top"
                   alt="HTML Technical Doc Page"
@@ -212,7 +265,7 @@
               </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 4 -->
             <div class="carousel-item">
               <div class="card mx-auto" style="max-width: 25rem">
                 <img
@@ -234,7 +287,7 @@
               </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 5 -->
             <div class="carousel-item">
               <div class="card mx-auto" style="max-width: 25rem">
                 <img
@@ -256,7 +309,7 @@
               </div>
             </div>
 
-            <!-- Project 4 -->
+            <!-- Project 6 -->
             <div class="carousel-item">
               <div class="card mx-auto" style="max-width: 25rem">
                 <img

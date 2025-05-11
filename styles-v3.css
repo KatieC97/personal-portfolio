@@ -5,6 +5,12 @@ body {
   scroll-padding-top: 70px;
 }
 
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
 .btn-brand {
   background-color: #a9338f;
   color: white;
@@ -28,19 +34,18 @@ section {
 /* --- Hero Banner --- */
 #hero,
 #domi {
-  margin-top: 0 !important;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none;
 }
 
 #hero img,
 #domi img {
-  max-height: 300px;
-  object-fit: contain;
-  display: block;
   width: 100%;
+  height: auto;
+  display: block;
   margin: 0 auto;
+  padding: 0;
   border: none;
 }
 
@@ -68,12 +73,19 @@ section {
   gap: 1.5rem;
   font-size: 1rem;
 }
+
+.no-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 /* --- Mobile Tweaks --- */
 @media (max-width: 576px) {
   #hero img,
   #domi img {
-    max-height: 260px;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #about {
@@ -95,6 +107,9 @@ section {
   }
   .tech-icon span {
     font-size: 1.1rem;
+  }
+  #hero {
+    padding-top: 3.5rem !important;
   }
 }
 @media (max-width: 992px) {
